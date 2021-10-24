@@ -161,9 +161,9 @@ body {
   color: #fff;
 }
 
-.button-default{
-  background-color:#fff;
-  color:#5F5F61;
+.button-default {
+  background-color: #fff;
+  color: #5f5f61;
 }
 .button {
   border: none;
@@ -182,13 +182,15 @@ body {
 
 .promo {
   padding-top: 50px;
-  padding-bottom:  50px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
+  margin: -20px;
 }
 
 .card {
+  margin: 20px;
   position: relative;
   border-radius: 20px;
   overflow: hidden;
@@ -206,7 +208,6 @@ body {
 }
 
 .card::before {
-
   z-index: -1;
   content: "";
   position: absolute;
@@ -254,7 +255,7 @@ body {
   background-size: cover;
 }*/
 
-.card-image{
+.card-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -262,4 +263,86 @@ body {
   height: 100%;
   z-index: -2;
   object-fit: cover; /*Обрезаем картинку если она больше*/
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  margin-bottom: 47px;
+  margin-top: 0;
+}
+
+.food-cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.food-card {
+  height: 182px;
+  width: 275px;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.food-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*!!!!!!!!!!!!!!!!!*/
+}
+
+.food-tag {
+  position: absolute;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  left: 10px;
+  top: 16px;
+  display: block;
+  /**/
+  border-radius: 30px;
+  padding: 5px 10px;
+  color: #49494f;
+}
+
+.tag-health {
+  background: #d0fd89;
+}
+.tag-vegetables {
+  background: #aebc41;
+  color: #FFFFFF;
+}
+
+.tag-meat {
+  background: #b86b78;
+  color: #FFFFFF;
+}
+
+.tag-bird {
+  background: #d68334;
+  color: #FFFFFF;
+}
+
+.tag-fish {
+  background: #cd6255;
+  color: #FFFFFF;
+}
+
+.tag-child {
+  background: #fffdbf;
+  color: #49494F;
+}
+
+.tag-parent {
+  background: #F6FDC8;
+  color: #49494F;
+}
+
+.tag-holiday {
+  background: #FEF7FE;
+  color: #49494F;
 }
